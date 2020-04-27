@@ -1,0 +1,26 @@
+<script type="text/javascript">
+  RED.nodes.registerType('enter-multiple-values',{
+      category: 'function',
+      color: '#a6bbcf',
+      defaults: {
+          url: {value:""}
+      },
+      inputs:1,
+      outputs:1,
+      icon: "file.png",
+      label: function() {
+          return this.name||"enter-multiple-values";
+      }
+  });
+</script>
+
+<script type="text/html" data-template-name="enter-multiple-values">
+  <div class="form-row">
+      <label for="node-input-url"><i class="icon-tag"></i> Url</label>
+      <input type="text" id="node-input-url" placeholder="Url">
+  </div>
+</script>
+
+<script type="text/html" data-help-name="enter-multiple-values">
+  <p>Launch Application Node</p>
+</script>

@@ -1,0 +1,28 @@
+<div class="app-container" fxFlex fxLayout="column">
+  <mat-toolbar color="primary">
+    <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+    <h1 class="app-name">FAST</h1>
+  </mat-toolbar>
+
+  <mat-sidenav-container fxFlex>
+    <mat-sidenav #snav [fixedInViewport]="false">
+      <mat-nav-list *ngFor="let route of routes">
+        <a mat-list-item [routerLink]="route.path" (click)="snav.toggle()">
+          <mat-icon *ngIf="route.iconConfig.type === 'svg'"
+            [svgIcon]="route.iconConfig.icon" aria-hidden="false" class="side-nav-link-icon">
+          </mat-icon>
+          <mat-icon *ngIf="route.iconConfig.type === 'icon'"
+            aria-hidden="false" class="side-nav-link-icon">{{route.iconConfig.icon}}
+          </mat-icon>
+          {{route.title}}
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content fxFlex fxLayout="column">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+

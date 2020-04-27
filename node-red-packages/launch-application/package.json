@@ -1,0 +1,16 @@
+{
+  "name": "node-red-contrib-launch-application",
+  "node-red": {
+    "nodes": {
+      "launch-application": "launch-application.js"
+    }
+  },
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "add": "cd c:/Users/sopu1/.node-red && npm i c:/Users/sopu1/workspace/my-workspace/node-red-packages/launch-application",
+    "test": "pwd"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,9 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  .editor-wrapper {
+    textarea {
+      font-size: 16px;
+    }
+  }
+}
