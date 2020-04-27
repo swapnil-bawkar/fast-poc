@@ -18,9 +18,15 @@ export const routes: any = Object.freeze([
   },
   {
     path: 'graph-editor',
-    loadChildren: () => import('./graph/graph.module').then(m => m.GraphModule),
+    loadChildren: () =>
+      import('./graph/graph.module').then((m) => m.GraphModule),
     title: 'Mermaid Editor',
     iconConfig: { icon: 'dashboard', type: 'icon' },
+  },
+  {
+    path: '',
+    redirectTo: '/graph-editor',
+    pathMatch: 'full',
   },
 ]);
 
