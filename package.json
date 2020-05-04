@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --base-href=/mermaid-poc/docs/ --aot --buildOptimizer --outputPath=docs",
+    "build": "ng build --base-href=/fast-poc/docs/ --aot --buildOptimizer --outputPath=docs",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
