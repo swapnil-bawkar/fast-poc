@@ -18,9 +18,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
 				__WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) :
-    undefined;
-}((function () { 'use strict';
-
+        undefined;
+}((function () {
+    'use strict';
     /**
      * @license
      * Copyright Google Inc. All Rights Reserved.
@@ -641,7 +641,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         performanceMeasure('Zone', 'Zone');
         return global['Zone'] = Zone;
     })(typeof window !== 'undefined' && window || typeof self !== 'undefined' && self || global);
-
     /**
      * @license
      * Copyright Google Inc. All Rights Reserved.
@@ -1101,7 +1100,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         Promise[Zone.__symbol__('uncaughtPromiseErrors')] = _uncaughtPromiseErrors;
         return ZoneAwarePromise;
     });
-
     /**
      * @license
      * Copyright Google Inc. All Rights Reserved.
@@ -1519,7 +1517,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         }
         return ieOrEdge;
     }
-
     /**
      * @license
      * Copyright Google Inc. All Rights Reserved.
@@ -1573,7 +1570,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             return originalObjectToString.call(this);
         };
     });
-
     /**
      * @license
      * Copyright Google Inc. All Rights Reserved.
@@ -2162,7 +2158,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             });
         }
     }
-
     /**
      * @license
      * Copyright Google Inc. All Rights Reserved.
@@ -2200,7 +2195,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         };
         api.attachOriginToPatched(target[method], nativeDelegate);
     }
-
     /**
      * @license
      * Copyright Google Inc. All Rights Reserved.
@@ -2499,7 +2493,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             patchFilteredProperties(WebSocket.prototype, websocketEventNames, ignoreProperties);
         }
     }
-
     /**
      * @license
      * Copyright Google Inc. All Rights Reserved.
@@ -2543,7 +2536,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         api.getGlobalObjects = () => ({ globalSources, zoneSymbolEventNames: zoneSymbolEventNames$1, eventNames, isBrowser, isMix, isNode, TRUE_STR,
             FALSE_STR, ZONE_SYMBOL_PREFIX, ADD_EVENT_LISTENER_STR, REMOVE_EVENT_LISTENER_STR });
     });
-
     /**
      * @license
      * Copyright Google Inc. All Rights Reserved.
@@ -2664,7 +2656,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 }
             });
     }
-
     /**
      * @license
      * Copyright Google Inc. All Rights Reserved.
@@ -2680,7 +2671,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         const callbacks = ['connectedCallback', 'disconnectedCallback', 'adoptedCallback', 'attributeChangedCallback'];
         api.patchCallbacks(api, _global.customElements, 'customElements', 'define', callbacks);
     }
-
     /**
      * @license
      * Copyright Google Inc. All Rights Reserved.
@@ -2715,7 +2705,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
     function patchEvent(global, api) {
         api.patchEventPrototype(global, api);
     }
-
     /**
      * @license
      * Copyright Google Inc. All Rights Reserved.
@@ -2949,8 +2938,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 findPromiseRejectionHandler('rejectionhandled');
         }
     });
-
 })));
+
 
 
 /***/ }),
@@ -3022,6 +3011,7 @@ __webpack_require__.r(__webpack_exports__);
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+
 
 
 /***/ }),

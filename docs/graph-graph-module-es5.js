@@ -1,15 +1,3 @@
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
@@ -105037,80 +105025,65 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! @angular/material/button */
     "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js");
 
-    var FormActionComponent = function FormActionComponent() {
-      _classCallCheck(this, FormActionComponent);
+    var FormActionComponent = /*@__PURE__*/function () {
+      var FormActionComponent = function FormActionComponent() {
+        _classCallCheck(this, FormActionComponent);
 
-      this.cancel = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
-    };
+        this.cancel = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+      };
 
-    FormActionComponent.ɵfac = function FormActionComponent_Factory(t) {
-      return new (t || FormActionComponent)();
-    };
+      FormActionComponent.ɵfac = function FormActionComponent_Factory(t) {
+        return new (t || FormActionComponent)();
+      };
 
-    FormActionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
-      type: FormActionComponent,
-      selectors: [["app-form-action"]],
-      inputs: {
-        disabled: "disabled"
-      },
-      outputs: {
-        cancel: "cancel"
-      },
-      decls: 6,
-      vars: 1,
-      consts: [["fxFlex", ""], ["mat-raised-button", "", 3, "click"], ["type", "submit", "mat-raised-button", "", "color", "primary", 3, "disabled"]],
-      template: function FormActionComponent_Template(rf, ctx) {
-        if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-card-actions");
+      FormActionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+        type: FormActionComponent,
+        selectors: [["app-form-action"]],
+        inputs: {
+          disabled: "disabled"
+        },
+        outputs: {
+          cancel: "cancel"
+        },
+        decls: 6,
+        vars: 1,
+        consts: [["fxFlex", ""], ["mat-raised-button", "", 3, "click"], ["type", "submit", "mat-raised-button", "", "color", "primary", 3, "disabled"]],
+        template: function FormActionComponent_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-card-actions");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "span", 0);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "span", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function FormActionComponent_Template_button_click_2_listener() {
-            return ctx.cancel.emit();
-          });
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function FormActionComponent_Template_button_click_2_listener() {
+              return ctx.cancel.emit();
+            });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "CANCEL");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "CANCEL");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "button", 2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "button", 2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, " SAVE ");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, " SAVE ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        }
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          }
 
-        if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+          if (rf & 2) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx.disabled);
-        }
-      },
-      directives: [_angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCardActions"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_2__["DefaultFlexDirective"], _angular_material_button__WEBPACK_IMPORTED_MODULE_3__["MatButton"]],
-      encapsulation: 2
-    });
-    /*@__PURE__*/
-
-    (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](FormActionComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-          selector: 'app-form-action',
-          template: "\n    <mat-card-actions>\n      <span fxFlex></span>\n      <button mat-raised-button (click)=\"cancel.emit()\">CANCEL</button>\n      <button\n        type=\"submit\"\n        [disabled]=\"disabled\"\n        mat-raised-button\n        color=\"primary\"\n      >\n        SAVE\n      </button>\n    </mat-card-actions>\n  "
-        }]
-      }], null, {
-        disabled: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
-        }],
-        cancel: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
-        }]
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx.disabled);
+          }
+        },
+        directives: [_angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCardActions"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_2__["DefaultFlexDirective"], _angular_material_button__WEBPACK_IMPORTED_MODULE_3__["MatButton"]],
+        encapsulation: 2
       });
-    })();
+      return FormActionComponent;
+    }();
     /***/
 
   },
@@ -105147,78 +105120,66 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! @angular/material/expansion */
     "../../node_modules/@angular/material/__ivy_ngcc__/fesm2015/expansion.js");
 
-    var GraphErrorComponent = function GraphErrorComponent() {
-      _classCallCheck(this, GraphErrorComponent);
+    var GraphErrorComponent = /*@__PURE__*/function () {
+      var GraphErrorComponent = function GraphErrorComponent() {
+        _classCallCheck(this, GraphErrorComponent);
 
-      this.svgError = '';
-    };
+        this.svgError = '';
+      };
 
-    GraphErrorComponent.ɵfac = function GraphErrorComponent_Factory(t) {
-      return new (t || GraphErrorComponent)();
-    };
+      GraphErrorComponent.ɵfac = function GraphErrorComponent_Factory(t) {
+        return new (t || GraphErrorComponent)();
+      };
 
-    GraphErrorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
-      type: GraphErrorComponent,
-      selectors: [["app-test-flow-editor-errors"]],
-      inputs: {
-        svgError: "svgError"
-      },
-      decls: 6,
-      vars: 4,
-      consts: [[3, "expanded"]],
-      template: function GraphErrorComponent_Template(rf, ctx) {
-        if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-expansion-panel", 0);
+      GraphErrorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+        type: GraphErrorComponent,
+        selectors: [["app-test-flow-editor-errors"]],
+        inputs: {
+          svgError: "svgError"
+        },
+        decls: 6,
+        vars: 4,
+        consts: [[3, "expanded"]],
+        template: function GraphErrorComponent_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-expansion-panel", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-expansion-panel-header");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-expansion-panel-header");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-panel-title");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-panel-title");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Graph Error Console ");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Graph Error Console ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        }
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          }
 
-        if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("expanded", !!ctx.svgError);
+          if (rf & 2) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("expanded", !!ctx.svgError);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("color", !!ctx.svgError ? "red" : "inherit");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("color", !!ctx.svgError ? "red" : "inherit");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.svgError);
-        }
-      },
-      directives: [_angular_material_expansion__WEBPACK_IMPORTED_MODULE_1__["MatExpansionPanel"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_1__["MatExpansionPanelHeader"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_1__["MatExpansionPanelTitle"]],
-      encapsulation: 2
-    });
-    /*@__PURE__*/
-
-    (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](GraphErrorComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-          selector: 'app-test-flow-editor-errors',
-          template: "\n    <mat-expansion-panel [expanded]=\"!!svgError\">\n      <mat-expansion-panel-header>\n        <mat-panel-title [style.color]=\"!!svgError ? 'red' : 'inherit'\">\n          Graph Error Console\n        </mat-panel-title>\n      </mat-expansion-panel-header>\n      <p>{{svgError}}</p>\n    </mat-expansion-panel>\n  "
-        }]
-      }], null, {
-        svgError: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
-        }]
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.svgError);
+          }
+        },
+        directives: [_angular_material_expansion__WEBPACK_IMPORTED_MODULE_1__["MatExpansionPanel"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_1__["MatExpansionPanelHeader"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_1__["MatExpansionPanelTitle"]],
+        encapsulation: 2
       });
-    })();
+      return GraphErrorComponent;
+    }();
     /***/
 
   },
@@ -105315,76 +105276,64 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! ../graph-error/graph-error.component */
     "./src/app/graph/components/graph-error/graph-error.component.ts");
 
-    var SvgPanelComponent = function SvgPanelComponent() {
-      _classCallCheck(this, SvgPanelComponent);
-    };
+    var SvgPanelComponent = /*@__PURE__*/function () {
+      var SvgPanelComponent = function SvgPanelComponent() {
+        _classCallCheck(this, SvgPanelComponent);
+      };
 
-    SvgPanelComponent.ɵfac = function SvgPanelComponent_Factory(t) {
-      return new (t || SvgPanelComponent)();
-    };
+      SvgPanelComponent.ɵfac = function SvgPanelComponent_Factory(t) {
+        return new (t || SvgPanelComponent)();
+      };
 
-    SvgPanelComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
-      type: SvgPanelComponent,
-      selectors: [["app-svg-panel"]],
-      inputs: {
-        svgError: "svgError"
-      },
-      decls: 8,
-      vars: 1,
-      consts: [["fxFlex", "", "fxLayout", "column"], ["fxFlex", "", "fxLayoutAlign", "center center"], ["id", "graphDiv", "fxFlex", "", "fxLayoutAlign", "center center"], [3, "svgError"]],
-      template: function SvgPanelComponent_Template(rf, ctx) {
-        if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-card", 0);
+      SvgPanelComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+        type: SvgPanelComponent,
+        selectors: [["app-svg-panel"]],
+        inputs: {
+          svgError: "svgError"
+        },
+        decls: 8,
+        vars: 1,
+        consts: [["fxFlex", "", "fxLayout", "column"], ["fxFlex", "", "fxLayoutAlign", "center center"], ["id", "graphDiv", "fxFlex", "", "fxLayoutAlign", "center center"], [3, "svgError"]],
+        template: function SvgPanelComponent_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-card", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-card-header");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-card-header");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-card-title");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-card-title");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Graph");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Graph");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "mat-card-content", 0);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "mat-card-content", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "div", 2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "div", 2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "app-test-flow-editor-errors", 3);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "app-test-flow-editor-errors", 3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        }
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          }
 
-        if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
+          if (rf & 2) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("svgError", ctx.svgError);
-        }
-      },
-      directives: [_angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCard"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_2__["DefaultFlexDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_2__["DefaultLayoutDirective"], _angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCardHeader"], _angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCardTitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCardContent"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_2__["DefaultLayoutAlignDirective"], _graph_error_graph_error_component__WEBPACK_IMPORTED_MODULE_3__["GraphErrorComponent"]],
-      encapsulation: 2
-    });
-    /*@__PURE__*/
-
-    (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](SvgPanelComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-          selector: 'app-svg-panel',
-          template: "\n    <mat-card fxFlex fxLayout=\"column\">\n      <mat-card-header>\n        <mat-card-title>Graph</mat-card-title>\n      </mat-card-header>\n      <mat-card-content fxFlex fxLayout=\"column\">\n        <div fxFlex fxLayoutAlign=\"center center\">\n          <div id=\"graphDiv\" fxFlex fxLayoutAlign=\"center center\"></div>\n        </div>\n        <app-test-flow-editor-errors\n          [svgError]=\"svgError\"\n        ></app-test-flow-editor-errors>\n      </mat-card-content>\n    </mat-card>\n  "
-        }]
-      }], null, {
-        svgError: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
-        }]
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("svgError", ctx.svgError);
+          }
+        },
+        directives: [_angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCard"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_2__["DefaultFlexDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_2__["DefaultLayoutDirective"], _angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCardHeader"], _angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCardTitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCardContent"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_2__["DefaultLayoutAlignDirective"], _graph_error_graph_error_component__WEBPACK_IMPORTED_MODULE_3__["GraphErrorComponent"]],
+        encapsulation: 2
       });
-    })();
+      return SvgPanelComponent;
+    }();
     /***/
 
   },
@@ -105451,119 +105400,103 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! @angular/forms */
     "../../node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
 
-    var TestFlowEditorComponent = /*#__PURE__*/function () {
-      function TestFlowEditorComponent() {
-        _classCallCheck(this, TestFlowEditorComponent);
+    var TestFlowEditorComponent = /*@__PURE__*/function () {
+      var TestFlowEditorComponent = /*#__PURE__*/function () {
+        function TestFlowEditorComponent() {
+          _classCallCheck(this, TestFlowEditorComponent);
 
-        this.graphDefinition = '';
-        this.editorOnChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
-        this.subject = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
-      }
-
-      _createClass(TestFlowEditorComponent, [{
-        key: "ngOnInit",
-        value: function ngOnInit() {
-          var _this = this;
-
-          this.subscription = this.subject.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["debounceTime"])(500)).subscribe(function (text) {
-            _this.editorOnChange.emit(text);
-          });
+          this.graphDefinition = '';
+          this.editorOnChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+          this.subject = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
         }
-      }, {
-        key: "handleTextChange",
-        value: function handleTextChange(text) {
-          this.subject.next(text);
-        }
-      }, {
-        key: "ngOnDestroy",
-        value: function ngOnDestroy() {
-          console.log('destroy');
-          this.subscription.unsubscribe();
-        }
-      }]);
 
+        _createClass(TestFlowEditorComponent, [{
+          key: "ngOnInit",
+          value: function ngOnInit() {
+            var _this = this;
+
+            this.subscription = this.subject.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["debounceTime"])(500)).subscribe(function (text) {
+              _this.editorOnChange.emit(text);
+            });
+          }
+        }, {
+          key: "handleTextChange",
+          value: function handleTextChange(text) {
+            this.subject.next(text);
+          }
+        }, {
+          key: "ngOnDestroy",
+          value: function ngOnDestroy() {
+            console.log('destroy');
+            this.subscription.unsubscribe();
+          }
+        }]);
+
+        return TestFlowEditorComponent;
+      }();
+
+      TestFlowEditorComponent.ɵfac = function TestFlowEditorComponent_Factory(t) {
+        return new (t || TestFlowEditorComponent)();
+      };
+
+      TestFlowEditorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+        type: TestFlowEditorComponent,
+        selectors: [["app-test-flow-editor"]],
+        inputs: {
+          graphDefinition: "graphDefinition"
+        },
+        outputs: {
+          editorOnChange: "editorOnChange"
+        },
+        decls: 8,
+        vars: 1,
+        consts: [["fxFlex", "", "fxLayout", "column"], ["fxFlex", ""], ["fxFlex", "", "fxLayout", "row", 1, "editor-wrapper"], ["fxFlex", "", "matInput", "", "placeholder", "", 3, "ngModel", "ngModelChange"]],
+        template: function TestFlowEditorComponent_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-card", 0);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-card-header");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-card-title");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Flow Editor");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "mat-card-content", 1);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 2);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "textarea", 3);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function TestFlowEditorComponent_Template_textarea_ngModelChange_6_listener($event) {
+              return ctx.handleTextChange($event);
+            });
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "          ");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          }
+
+          if (rf & 2) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.graphDefinition);
+          }
+        },
+        directives: [_angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCard"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_4__["DefaultFlexDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_4__["DefaultLayoutDirective"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardHeader"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardTitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardContent"], _angular_material_input__WEBPACK_IMPORTED_MODULE_5__["MatInput"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgModel"]],
+        styles: ["[_nghost-%COMP%] {\n  display: flex;\n  flex-direction: column;\n}\n[_nghost-%COMP%]   .editor-wrapper[_ngcontent-%COMP%]   textarea[_ngcontent-%COMP%] {\n  font-size: 16px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2plY3RzL25vZGUtcmVkLXBvYy9zcmMvYXBwL2dyYXBoL2NvbXBvbmVudHMvdGV4dC1ib3gtZWRpdG9yL0M6XFxVc2Vyc1xcc29wdTFcXHdvcmtzcGFjZVxcbXktd29ya3NwYWNlL3Byb2plY3RzXFxub2RlLXJlZC1wb2NcXHNyY1xcYXBwXFxncmFwaFxcY29tcG9uZW50c1xcdGV4dC1ib3gtZWRpdG9yXFx0ZXN0LWZsb3ctZWRpdG9yLmNvbXBvbmVudC5zY3NzIiwicHJvamVjdHMvbm9kZS1yZWQtcG9jL3NyYy9hcHAvZ3JhcGgvY29tcG9uZW50cy90ZXh0LWJveC1lZGl0b3IvdGVzdC1mbG93LWVkaXRvci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQUE7RUFDQSxzQkFBQTtBQ0NGO0FEQ0k7RUFDRSxlQUFBO0FDQ04iLCJmaWxlIjoicHJvamVjdHMvbm9kZS1yZWQtcG9jL3NyYy9hcHAvZ3JhcGgvY29tcG9uZW50cy90ZXh0LWJveC1lZGl0b3IvdGVzdC1mbG93LWVkaXRvci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0IHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgLmVkaXRvci13cmFwcGVyIHtcclxuICAgIHRleHRhcmVhIHtcclxuICAgICAgZm9udC1zaXplOiAxNnB4O1xyXG4gICAgfVxyXG4gIH1cclxufVxyXG4iLCI6aG9zdCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG46aG9zdCAuZWRpdG9yLXdyYXBwZXIgdGV4dGFyZWEge1xuICBmb250LXNpemU6IDE2cHg7XG59Il19 */"]
+      });
       return TestFlowEditorComponent;
     }();
-
-    TestFlowEditorComponent.ɵfac = function TestFlowEditorComponent_Factory(t) {
-      return new (t || TestFlowEditorComponent)();
-    };
-
-    TestFlowEditorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
-      type: TestFlowEditorComponent,
-      selectors: [["app-test-flow-editor"]],
-      inputs: {
-        graphDefinition: "graphDefinition"
-      },
-      outputs: {
-        editorOnChange: "editorOnChange"
-      },
-      decls: 8,
-      vars: 1,
-      consts: [["fxFlex", "", "fxLayout", "column"], ["fxFlex", ""], ["fxFlex", "", "fxLayout", "row", 1, "editor-wrapper"], ["fxFlex", "", "matInput", "", "placeholder", "", 3, "ngModel", "ngModelChange"]],
-      template: function TestFlowEditorComponent_Template(rf, ctx) {
-        if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-card", 0);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-card-header");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-card-title");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Flow Editor");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "mat-card-content", 1);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "textarea", 3);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function TestFlowEditorComponent_Template_textarea_ngModelChange_6_listener($event) {
-            return ctx.handleTextChange($event);
-          });
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "          ");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        }
-
-        if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.graphDefinition);
-        }
-      },
-      directives: [_angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCard"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_4__["DefaultFlexDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_4__["DefaultLayoutDirective"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardHeader"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardTitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardContent"], _angular_material_input__WEBPACK_IMPORTED_MODULE_5__["MatInput"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgModel"]],
-      styles: ["[_nghost-%COMP%] {\n  display: flex;\n  flex-direction: column;\n}\n[_nghost-%COMP%]   .editor-wrapper[_ngcontent-%COMP%]   textarea[_ngcontent-%COMP%] {\n  font-size: 16px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2plY3RzL25vZGUtcmVkLXBvYy9zcmMvYXBwL2dyYXBoL2NvbXBvbmVudHMvdGV4dC1ib3gtZWRpdG9yL0M6XFxVc2Vyc1xcc29wdTFcXHdvcmtzcGFjZVxcbXktd29ya3NwYWNlL3Byb2plY3RzXFxub2RlLXJlZC1wb2NcXHNyY1xcYXBwXFxncmFwaFxcY29tcG9uZW50c1xcdGV4dC1ib3gtZWRpdG9yXFx0ZXN0LWZsb3ctZWRpdG9yLmNvbXBvbmVudC5zY3NzIiwicHJvamVjdHMvbm9kZS1yZWQtcG9jL3NyYy9hcHAvZ3JhcGgvY29tcG9uZW50cy90ZXh0LWJveC1lZGl0b3IvdGVzdC1mbG93LWVkaXRvci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQUE7RUFDQSxzQkFBQTtBQ0NGO0FEQ0k7RUFDRSxlQUFBO0FDQ04iLCJmaWxlIjoicHJvamVjdHMvbm9kZS1yZWQtcG9jL3NyYy9hcHAvZ3JhcGgvY29tcG9uZW50cy90ZXh0LWJveC1lZGl0b3IvdGVzdC1mbG93LWVkaXRvci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0IHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgLmVkaXRvci13cmFwcGVyIHtcclxuICAgIHRleHRhcmVhIHtcclxuICAgICAgZm9udC1zaXplOiAxNnB4O1xyXG4gICAgfVxyXG4gIH1cclxufVxyXG4iLCI6aG9zdCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG46aG9zdCAuZWRpdG9yLXdyYXBwZXIgdGV4dGFyZWEge1xuICBmb250LXNpemU6IDE2cHg7XG59Il19 */"]
-    });
-    /*@__PURE__*/
-
-    (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TestFlowEditorComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-          selector: 'app-test-flow-editor',
-          template: "\n    <mat-card fxFlex fxLayout=\"column\">\n      <mat-card-header>\n        <mat-card-title>Flow Editor</mat-card-title>\n      </mat-card-header>\n      <mat-card-content fxFlex>\n        <div fxFlex fxLayout=\"row\" class=\"editor-wrapper\">\n          <textarea\n            fxFlex\n            matInput\n            placeholder=\"\"\n            [ngModel]=\"graphDefinition\"\n            (ngModelChange)=\"handleTextChange($event)\"\n          >\n          </textarea>\n        </div>\n      </mat-card-content>\n    </mat-card>\n  ",
-          styleUrls: ['./test-flow-editor.component.scss']
-        }]
-      }], null, {
-        graphDefinition: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
-        }],
-        editorOnChange: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
-        }]
-      });
-    })();
     /***/
 
   },
@@ -105636,46 +105569,38 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! @angular/forms */
     "../../node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
 
-    var LaunchApplicationFormService = /*#__PURE__*/function () {
-      function LaunchApplicationFormService(formBuilder) {
-        _classCallCheck(this, LaunchApplicationFormService);
+    var LaunchApplicationFormService = /*@__PURE__*/function () {
+      var LaunchApplicationFormService = /*#__PURE__*/function () {
+        function LaunchApplicationFormService(formBuilder) {
+          _classCallCheck(this, LaunchApplicationFormService);
 
-        this.formBuilder = formBuilder;
-      }
-
-      _createClass(LaunchApplicationFormService, [{
-        key: "createForm",
-        value: function createForm() {
-          var reg = '(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?';
-          this.launchApplicationForm = this.formBuilder.group({
-            url: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].pattern(reg)]]
-          });
-          return this.launchApplicationForm;
+          this.formBuilder = formBuilder;
         }
-      }]);
 
+        _createClass(LaunchApplicationFormService, [{
+          key: "createForm",
+          value: function createForm() {
+            var reg = '(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?';
+            this.launchApplicationForm = this.formBuilder.group({
+              url: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].pattern(reg)]]
+            });
+            return this.launchApplicationForm;
+          }
+        }]);
+
+        return LaunchApplicationFormService;
+      }();
+
+      LaunchApplicationFormService.ɵfac = function LaunchApplicationFormService_Factory(t) {
+        return new (t || LaunchApplicationFormService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]));
+      };
+
+      LaunchApplicationFormService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+        token: LaunchApplicationFormService,
+        factory: LaunchApplicationFormService.ɵfac
+      });
       return LaunchApplicationFormService;
     }();
-
-    LaunchApplicationFormService.ɵfac = function LaunchApplicationFormService_Factory(t) {
-      return new (t || LaunchApplicationFormService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]));
-    };
-
-    LaunchApplicationFormService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
-      token: LaunchApplicationFormService,
-      factory: LaunchApplicationFormService.ɵfac
-    });
-    /*@__PURE__*/
-
-    (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](LaunchApplicationFormService, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"]
-      }], function () {
-        return [{
-          type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]
-        }];
-      }, null);
-    })();
     /***/
 
   },
@@ -105772,139 +105697,123 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! ../../components/form-action/form-action.component */
     "./src/app/graph/components/form-action/form-action.component.ts");
 
-    var LaunchApplicationComponent = /*#__PURE__*/function () {
-      function LaunchApplicationComponent(store, launchApplicationFormService) {
-        _classCallCheck(this, LaunchApplicationComponent);
+    var LaunchApplicationComponent = /*@__PURE__*/function () {
+      var LaunchApplicationComponent = /*#__PURE__*/function () {
+        function LaunchApplicationComponent(store, launchApplicationFormService) {
+          _classCallCheck(this, LaunchApplicationComponent);
 
-        this.store = store;
-        this.launchApplicationFormService = launchApplicationFormService;
-      }
+          this.store = store;
+          this.launchApplicationFormService = launchApplicationFormService;
+        }
 
-      _createClass(LaunchApplicationComponent, [{
-        key: "ngOnInit",
-        value: function ngOnInit() {
-          this.form = this.launchApplicationFormService.createForm();
-        }
-      }, {
-        key: "onSubmit",
-        value: function onSubmit() {
-          this.store.dispatch(Object(_store_actions_graph_actions__WEBPACK_IMPORTED_MODULE_1__["graphNodeFormSaveAction"])({
-            nodeId: 'LaunchApplication'
-          }));
-        }
-      }, {
-        key: "handleCancelClick",
-        value: function handleCancelClick() {
-          this.store.dispatch(Object(_store_actions_graph_actions__WEBPACK_IMPORTED_MODULE_1__["graphNodeFormSaveAction"])({
-            nodeId: 'LaunchApplication'
-          }));
-        }
-      }, {
-        key: "ngOnDestroy",
-        value: function ngOnDestroy() {}
-      }]);
+        _createClass(LaunchApplicationComponent, [{
+          key: "ngOnInit",
+          value: function ngOnInit() {
+            this.form = this.launchApplicationFormService.createForm();
+          }
+        }, {
+          key: "onSubmit",
+          value: function onSubmit() {
+            this.store.dispatch(Object(_store_actions_graph_actions__WEBPACK_IMPORTED_MODULE_1__["graphNodeFormSaveAction"])({
+              nodeId: 'LaunchApplication'
+            }));
+          }
+        }, {
+          key: "handleCancelClick",
+          value: function handleCancelClick() {
+            this.store.dispatch(Object(_store_actions_graph_actions__WEBPACK_IMPORTED_MODULE_1__["graphNodeFormSaveAction"])({
+              nodeId: 'LaunchApplication'
+            }));
+          }
+        }, {
+          key: "ngOnDestroy",
+          value: function ngOnDestroy() {}
+        }]);
 
+        return LaunchApplicationComponent;
+      }();
+
+      LaunchApplicationComponent.ɵfac = function LaunchApplicationComponent_Factory(t) {
+        return new (t || LaunchApplicationComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_ngrx_store__WEBPACK_IMPORTED_MODULE_3__["Store"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_launch_application_form_service__WEBPACK_IMPORTED_MODULE_2__["LaunchApplicationFormService"]));
+      };
+
+      LaunchApplicationComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+        type: LaunchApplicationComponent,
+        selectors: [["app-launch-application"]],
+        features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([_launch_application_form_service__WEBPACK_IMPORTED_MODULE_2__["LaunchApplicationFormService"]])],
+        decls: 16,
+        vars: 2,
+        consts: [["fxFlex", "", 3, "formGroup", "ngSubmit"], ["fxFlex", "", "fxLayout", "column"], ["fxFlex", ""], ["matInput", "", "placeholder", "https://www.google.com/", "formControlName", "url"], [3, "disabled"]],
+        template: function LaunchApplicationComponent_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "form", 0);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function LaunchApplicationComponent_Template_form_ngSubmit_0_listener() {
+              return ctx.onSubmit();
+            });
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-card", 1);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-card-header");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "mat-card-title");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Launch Application");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "mat-card-content", 2);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "mat-divider");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "h3");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "mat-icon");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "settings ");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Properties");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "mat-form-field");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "mat-label");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "URL");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "input", 3);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "app-form-action", 4);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          }
+
+          if (rf & 2) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx.form);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](15);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx.form.invalid);
+          }
+        },
+        directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatusGroup"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_5__["DefaultFlexDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormGroupDirective"], _angular_material_card__WEBPACK_IMPORTED_MODULE_6__["MatCard"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutDirective"], _angular_material_card__WEBPACK_IMPORTED_MODULE_6__["MatCardHeader"], _angular_material_card__WEBPACK_IMPORTED_MODULE_6__["MatCardTitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_6__["MatCardContent"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_7__["MatDivider"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__["MatIcon"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_9__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_9__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_10__["MatInput"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormControlName"], _components_form_action_form_action_component__WEBPACK_IMPORTED_MODULE_11__["FormActionComponent"]],
+        styles: ["[_nghost-%COMP%] {\n  display: flex;\n  flex: 1;\n}\n[_nghost-%COMP%]   mat-form-field[_ngcontent-%COMP%] {\n  width: 100%;\n}\n[_nghost-%COMP%]   h3[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  max-width: 100px;\n  margin-top: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2plY3RzL25vZGUtcmVkLXBvYy9zcmMvYXBwL2dyYXBoL2NvbnRhaW5lcnMvbGF1bmNoLWFwcGxpY2F0aW9uL0M6XFxVc2Vyc1xcc29wdTFcXHdvcmtzcGFjZVxcbXktd29ya3NwYWNlL3Byb2plY3RzXFxub2RlLXJlZC1wb2NcXHNyY1xcYXBwXFxncmFwaFxcY29udGFpbmVyc1xcbGF1bmNoLWFwcGxpY2F0aW9uXFxsYXVuY2gtYXBwbGljYXRpb24uY29tcG9uZW50LnNjc3MiLCJwcm9qZWN0cy9ub2RlLXJlZC1wb2Mvc3JjL2FwcC9ncmFwaC9jb250YWluZXJzL2xhdW5jaC1hcHBsaWNhdGlvbi9sYXVuY2gtYXBwbGljYXRpb24uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFBO0VBQ0EsT0FBQTtBQ0NGO0FEQUU7RUFDRSxXQUFBO0FDRUo7QURBRTtFQUNFLGFBQUE7RUFDQSxtQkFBQTtFQUNBLDhCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxnQkFBQTtBQ0VKIiwiZmlsZSI6InByb2plY3RzL25vZGUtcmVkLXBvYy9zcmMvYXBwL2dyYXBoL2NvbnRhaW5lcnMvbGF1bmNoLWFwcGxpY2F0aW9uL2xhdW5jaC1hcHBsaWNhdGlvbi5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0IHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXg6IDE7XHJcbiAgbWF0LWZvcm0tZmllbGQge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG4gIGgzIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gICAgbWF4LXdpZHRoOiAxMDBweDtcclxuICAgIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgfVxyXG59XHJcbiIsIjpob3N0IHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleDogMTtcbn1cbjpob3N0IG1hdC1mb3JtLWZpZWxkIHtcbiAgd2lkdGg6IDEwMCU7XG59XG46aG9zdCBoMyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgbWF4LXdpZHRoOiAxMDBweDtcbiAgbWFyZ2luLXRvcDogMTBweDtcbn0iXX0= */"]
+      });
       return LaunchApplicationComponent;
     }();
-
-    LaunchApplicationComponent.ɵfac = function LaunchApplicationComponent_Factory(t) {
-      return new (t || LaunchApplicationComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_ngrx_store__WEBPACK_IMPORTED_MODULE_3__["Store"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_launch_application_form_service__WEBPACK_IMPORTED_MODULE_2__["LaunchApplicationFormService"]));
-    };
-
-    LaunchApplicationComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
-      type: LaunchApplicationComponent,
-      selectors: [["app-launch-application"]],
-      features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([_launch_application_form_service__WEBPACK_IMPORTED_MODULE_2__["LaunchApplicationFormService"]])],
-      decls: 16,
-      vars: 2,
-      consts: [["fxFlex", "", 3, "formGroup", "ngSubmit"], ["fxFlex", "", "fxLayout", "column"], ["fxFlex", ""], ["matInput", "", "placeholder", "https://www.google.com/", "formControlName", "url"], [3, "disabled"]],
-      template: function LaunchApplicationComponent_Template(rf, ctx) {
-        if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "form", 0);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function LaunchApplicationComponent_Template_form_ngSubmit_0_listener() {
-            return ctx.onSubmit();
-          });
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-card", 1);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-card-header");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "mat-card-title");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Launch Application");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "mat-card-content", 2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "mat-divider");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "h3");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "mat-icon");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "settings ");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Properties");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "mat-form-field");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "mat-label");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "URL");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "input", 3);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "app-form-action", 4);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        }
-
-        if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx.form);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx.form.invalid);
-        }
-      },
-      directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatusGroup"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_5__["DefaultFlexDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormGroupDirective"], _angular_material_card__WEBPACK_IMPORTED_MODULE_6__["MatCard"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutDirective"], _angular_material_card__WEBPACK_IMPORTED_MODULE_6__["MatCardHeader"], _angular_material_card__WEBPACK_IMPORTED_MODULE_6__["MatCardTitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_6__["MatCardContent"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_7__["MatDivider"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__["MatIcon"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_9__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_9__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_10__["MatInput"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormControlName"], _components_form_action_form_action_component__WEBPACK_IMPORTED_MODULE_11__["FormActionComponent"]],
-      styles: ["[_nghost-%COMP%] {\n  display: flex;\n  flex: 1;\n}\n[_nghost-%COMP%]   mat-form-field[_ngcontent-%COMP%] {\n  width: 100%;\n}\n[_nghost-%COMP%]   h3[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  max-width: 100px;\n  margin-top: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2plY3RzL25vZGUtcmVkLXBvYy9zcmMvYXBwL2dyYXBoL2NvbnRhaW5lcnMvbGF1bmNoLWFwcGxpY2F0aW9uL0M6XFxVc2Vyc1xcc29wdTFcXHdvcmtzcGFjZVxcbXktd29ya3NwYWNlL3Byb2plY3RzXFxub2RlLXJlZC1wb2NcXHNyY1xcYXBwXFxncmFwaFxcY29udGFpbmVyc1xcbGF1bmNoLWFwcGxpY2F0aW9uXFxsYXVuY2gtYXBwbGljYXRpb24uY29tcG9uZW50LnNjc3MiLCJwcm9qZWN0cy9ub2RlLXJlZC1wb2Mvc3JjL2FwcC9ncmFwaC9jb250YWluZXJzL2xhdW5jaC1hcHBsaWNhdGlvbi9sYXVuY2gtYXBwbGljYXRpb24uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFBO0VBQ0EsT0FBQTtBQ0NGO0FEQUU7RUFDRSxXQUFBO0FDRUo7QURBRTtFQUNFLGFBQUE7RUFDQSxtQkFBQTtFQUNBLDhCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxnQkFBQTtBQ0VKIiwiZmlsZSI6InByb2plY3RzL25vZGUtcmVkLXBvYy9zcmMvYXBwL2dyYXBoL2NvbnRhaW5lcnMvbGF1bmNoLWFwcGxpY2F0aW9uL2xhdW5jaC1hcHBsaWNhdGlvbi5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0IHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXg6IDE7XHJcbiAgbWF0LWZvcm0tZmllbGQge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG4gIGgzIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gICAgbWF4LXdpZHRoOiAxMDBweDtcclxuICAgIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgfVxyXG59XHJcbiIsIjpob3N0IHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleDogMTtcbn1cbjpob3N0IG1hdC1mb3JtLWZpZWxkIHtcbiAgd2lkdGg6IDEwMCU7XG59XG46aG9zdCBoMyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgbWF4LXdpZHRoOiAxMDBweDtcbiAgbWFyZ2luLXRvcDogMTBweDtcbn0iXX0= */"]
-    });
-    /*@__PURE__*/
-
-    (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](LaunchApplicationComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-          selector: 'app-launch-application',
-          template: "\n    <form fxFlex [formGroup]=\"form\" (ngSubmit)=\"onSubmit()\">\n      <mat-card fxFlex fxLayout=\"column\">\n        <mat-card-header>\n          <mat-card-title>Launch Application</mat-card-title>\n        </mat-card-header>\n\n        <mat-card-content fxFlex>\n          <mat-divider></mat-divider>\n          <h3><mat-icon>settings </mat-icon>Properties</h3>\n          <mat-form-field>\n            <mat-label>URL</mat-label>\n            <input\n              matInput\n              placeholder=\"https://www.google.com/\"\n              formControlName=\"url\"\n            />\n          </mat-form-field>\n        </mat-card-content>\n\n        <app-form-action [disabled]=\"form.invalid\"></app-form-action>\n      </mat-card>\n    </form>\n  ",
-          styleUrls: ['./launch-application.component.scss'],
-          providers: [_launch_application_form_service__WEBPACK_IMPORTED_MODULE_2__["LaunchApplicationFormService"]]
-        }]
-      }], function () {
-        return [{
-          type: _ngrx_store__WEBPACK_IMPORTED_MODULE_3__["Store"]
-        }, {
-          type: _launch_application_form_service__WEBPACK_IMPORTED_MODULE_2__["LaunchApplicationFormService"]
-        }];
-      }, null);
-    })();
     /***/
 
   },
@@ -106003,125 +105912,104 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    var MermaidEditorComponent = /*#__PURE__*/function () {
-      function MermaidEditorComponent(store, element) {
-        _classCallCheck(this, MermaidEditorComponent);
+    var MermaidEditorComponent = /*@__PURE__*/function () {
+      var MermaidEditorComponent = /*#__PURE__*/function () {
+        function MermaidEditorComponent(store, element) {
+          _classCallCheck(this, MermaidEditorComponent);
 
-        this.store = store;
-        this.element = element;
-        this.toggleNodeSideNav = false;
-        this.graphSvgCode$ = this.store.pipe(Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["select"])(_store_selectors_graph_selectors__WEBPACK_IMPORTED_MODULE_2__["getGraphStateSelector"]));
-        console.log('init');
-        this.handleEditorChange("graph TD\n    LaunchApplication -->|ready| EnterMultipleValues(EnterMultipleValues)\n    click LaunchApplication callback \"Tooltip for a callback\"\n    EnterMultipleValues --> C{Let me think}\n    C -->|One| D[Laptop]\n    C -->|Two| E[iPhone]\n    C -->|Three| F[fa:fa-car Car]");
-      }
-
-      _createClass(MermaidEditorComponent, [{
-        key: "ngOnInit",
-        value: function ngOnInit() {
-          var _this2 = this;
-
-          var element = this.element.nativeElement.querySelector('#graphDiv');
-          this.subscription = this.graphSvgCode$.subscribe(function (graphState) {
-            var svgCode = graphState.svgCode,
-                bindFunctions = graphState.bindFunctions,
-                svgError = graphState.svgError,
-                graphDefinition = graphState.graphDefinition,
-                clickedNodeId = graphState.clickedNodeId;
-
-            if (!!svgCode) {
-              element.innerHTML = svgCode;
-            }
-
-            if (!!bindFunctions) {
-              bindFunctions();
-            }
-
-            _this2.svgError = svgError && svgError.str;
-            _this2.graphDefinition = graphDefinition;
-            _this2.toggleNodeSideNav = !!clickedNodeId;
-          });
-        }
-      }, {
-        key: "handleEditorChange",
-        value: function handleEditorChange(text) {
-          this.store.dispatch(Object(_store_actions_graph_actions__WEBPACK_IMPORTED_MODULE_3__["updateGraphDefinitionAction"])({
-            graphDefinition: text,
-            graphEl: 'graphEl'
-          }));
-        }
-      }, {
-        key: "ngOnDestroy",
-        value: function ngOnDestroy() {
-          this.subscription.unsubscribe();
-        }
-      }]);
-
-      return MermaidEditorComponent;
-    }();
-
-    MermaidEditorComponent.ɵfac = function MermaidEditorComponent_Factory(t) {
-      return new (t || MermaidEditorComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["Store"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]));
-    };
-
-    MermaidEditorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
-      type: MermaidEditorComponent,
-      selectors: [["app-mermaid-editor"]],
-      decls: 3,
-      vars: 5,
-      consts: [["fxFlex", "35%", 1, "mat-elevation-z2", 3, "graphDefinition", "editorOnChange"], ["fxFlex", "70%", 3, "svgError"], ["fxLayout", "column", "fxFlex", "25%", 4, "ngIf"], ["fxLayout", "column", "fxFlex", "25%"]],
-      template: function MermaidEditorComponent_Template(rf, ctx) {
-        if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "app-test-flow-editor", 0);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("editorOnChange", function MermaidEditorComponent_Template_app_test_flow_editor_editorOnChange_0_listener($event) {
-            return ctx.handleEditorChange($event);
-          });
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "app-svg-panel", 1);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, MermaidEditorComponent_div_2_Template, 2, 1, "div", 2);
+          this.store = store;
+          this.element = element;
+          this.toggleNodeSideNav = false;
+          this.graphSvgCode$ = this.store.pipe(Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["select"])(_store_selectors_graph_selectors__WEBPACK_IMPORTED_MODULE_2__["getGraphStateSelector"]));
+          console.log('init');
+          this.handleEditorChange("graph TD\n    LaunchApplication -->|ready| EnterMultipleValues(EnterMultipleValues)\n    click LaunchApplication callback \"Tooltip for a callback\"\n    EnterMultipleValues --> C{Let me think}\n    C -->|One| D[Laptop]\n    C -->|Two| E[iPhone]\n    C -->|Three| F[fa:fa-car Car]");
         }
 
-        if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("@openCloseLeft", ctx.toggleNodeSideNav)("graphDefinition", ctx.graphDefinition);
+        _createClass(MermaidEditorComponent, [{
+          key: "ngOnInit",
+          value: function ngOnInit() {
+            var _this2 = this;
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+            var element = this.element.nativeElement.querySelector('#graphDiv');
+            this.subscription = this.graphSvgCode$.subscribe(function (graphState) {
+              var svgCode = graphState.svgCode,
+                  bindFunctions = graphState.bindFunctions,
+                  svgError = graphState.svgError,
+                  graphDefinition = graphState.graphDefinition,
+                  clickedNodeId = graphState.clickedNodeId;
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("@openCloseLeft", ctx.toggleNodeSideNav)("svgError", ctx.svgError);
+              if (!!svgCode) {
+                element.innerHTML = svgCode;
+              }
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+              if (!!bindFunctions) {
+                bindFunctions();
+              }
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.toggleNodeSideNav);
-        }
-      },
-      directives: [_components_text_box_editor_test_flow_editor_component__WEBPACK_IMPORTED_MODULE_5__["TestFlowEditorComponent"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_6__["DefaultFlexDirective"], _components_svg_panel_svg_panel_component__WEBPACK_IMPORTED_MODULE_7__["SvgPanelComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgIf"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_6__["DefaultLayoutDirective"], _angular_router__WEBPACK_IMPORTED_MODULE_9__["RouterOutlet"]],
-      styles: ["[_nghost-%COMP%] {\n  display: flex;\n  flex: 1;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2plY3RzL25vZGUtcmVkLXBvYy9zcmMvYXBwL2dyYXBoL2NvbnRhaW5lcnMvbWVybWFpZC1lZGl0b3IvQzpcXFVzZXJzXFxzb3B1MVxcd29ya3NwYWNlXFxteS13b3Jrc3BhY2UvcHJvamVjdHNcXG5vZGUtcmVkLXBvY1xcc3JjXFxhcHBcXGdyYXBoXFxjb250YWluZXJzXFxtZXJtYWlkLWVkaXRvclxcbWVybWFpZC1lZGl0b3IuY29tcG9uZW50LnNjc3MiLCJwcm9qZWN0cy9ub2RlLXJlZC1wb2Mvc3JjL2FwcC9ncmFwaC9jb250YWluZXJzL21lcm1haWQtZWRpdG9yL21lcm1haWQtZWRpdG9yLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBQTtFQUNBLE9BQUE7QUNDRiIsImZpbGUiOiJwcm9qZWN0cy9ub2RlLXJlZC1wb2Mvc3JjL2FwcC9ncmFwaC9jb250YWluZXJzL21lcm1haWQtZWRpdG9yL21lcm1haWQtZWRpdG9yLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiOmhvc3Qge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleDogMTtcclxufVxyXG4iLCI6aG9zdCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXg6IDE7XG59Il19 */"],
-      data: {
-        animation: [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["trigger"])('openClose', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["transition"])(':enter', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({
-          transform: 'translateX(0)'
-        }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["animate"])('250ms ease-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({
-          transform: 'translateX(-2%)'
-        }))]), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["transition"])(':leave', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["animate"])('250ms ease-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({
-          transform: 'translateX(0)'
-        }))])]), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["trigger"])('openCloseLeft', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["state"])('true', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({
-          transform: 'translateX(-0.2%)'
-        })), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["state"])('false', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({
-          transform: 'translateX(0%)'
-        })), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["transition"])('false <=> true', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["animate"])(250))])]
-      }
-    });
-    /*@__PURE__*/
+              _this2.svgError = svgError && svgError.str;
+              _this2.graphDefinition = graphDefinition;
+              _this2.toggleNodeSideNav = !!clickedNodeId;
+            });
+          }
+        }, {
+          key: "handleEditorChange",
+          value: function handleEditorChange(text) {
+            this.store.dispatch(Object(_store_actions_graph_actions__WEBPACK_IMPORTED_MODULE_3__["updateGraphDefinitionAction"])({
+              graphDefinition: text,
+              graphEl: 'graphEl'
+            }));
+          }
+        }, {
+          key: "ngOnDestroy",
+          value: function ngOnDestroy() {
+            this.subscription.unsubscribe();
+          }
+        }]);
 
-    (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](MermaidEditorComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-          selector: 'app-mermaid-editor',
-          template: "\n    <app-test-flow-editor\n      fxFlex=\"35%\"\n      [@openCloseLeft]=\"toggleNodeSideNav\"\n      class=\"mat-elevation-z2\"\n      [graphDefinition]=\"graphDefinition\"\n      (editorOnChange)=\"handleEditorChange($event)\"\n    >\n    </app-test-flow-editor>\n    <app-svg-panel\n      [@openCloseLeft]=\"toggleNodeSideNav\"\n      [svgError]=\"svgError\"\n      fxFlex=\"70%\"\n    ></app-svg-panel>\n    <div @openClose *ngIf=\"toggleNodeSideNav\" fxLayout=\"column\" fxFlex=\"25%\">\n      <router-outlet></router-outlet>\n    </div>\n  ",
-          styleUrls: ['./mermaid-editor.component.scss'],
-          animations: [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["trigger"])('openClose', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["transition"])(':enter', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({
+        return MermaidEditorComponent;
+      }();
+
+      MermaidEditorComponent.ɵfac = function MermaidEditorComponent_Factory(t) {
+        return new (t || MermaidEditorComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["Store"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]));
+      };
+
+      MermaidEditorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+        type: MermaidEditorComponent,
+        selectors: [["app-mermaid-editor"]],
+        decls: 3,
+        vars: 5,
+        consts: [["fxFlex", "35%", 1, "mat-elevation-z2", 3, "graphDefinition", "editorOnChange"], ["fxFlex", "70%", 3, "svgError"], ["fxLayout", "column", "fxFlex", "25%", 4, "ngIf"], ["fxLayout", "column", "fxFlex", "25%"]],
+        template: function MermaidEditorComponent_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "app-test-flow-editor", 0);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("editorOnChange", function MermaidEditorComponent_Template_app_test_flow_editor_editorOnChange_0_listener($event) {
+              return ctx.handleEditorChange($event);
+            });
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "app-svg-panel", 1);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, MermaidEditorComponent_div_2_Template, 2, 1, "div", 2);
+          }
+
+          if (rf & 2) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("@openCloseLeft", ctx.toggleNodeSideNav)("graphDefinition", ctx.graphDefinition);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("@openCloseLeft", ctx.toggleNodeSideNav)("svgError", ctx.svgError);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.toggleNodeSideNav);
+          }
+        },
+        directives: [_components_text_box_editor_test_flow_editor_component__WEBPACK_IMPORTED_MODULE_5__["TestFlowEditorComponent"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_6__["DefaultFlexDirective"], _components_svg_panel_svg_panel_component__WEBPACK_IMPORTED_MODULE_7__["SvgPanelComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgIf"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_6__["DefaultLayoutDirective"], _angular_router__WEBPACK_IMPORTED_MODULE_9__["RouterOutlet"]],
+        styles: ["[_nghost-%COMP%] {\n  display: flex;\n  flex: 1;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2plY3RzL25vZGUtcmVkLXBvYy9zcmMvYXBwL2dyYXBoL2NvbnRhaW5lcnMvbWVybWFpZC1lZGl0b3IvQzpcXFVzZXJzXFxzb3B1MVxcd29ya3NwYWNlXFxteS13b3Jrc3BhY2UvcHJvamVjdHNcXG5vZGUtcmVkLXBvY1xcc3JjXFxhcHBcXGdyYXBoXFxjb250YWluZXJzXFxtZXJtYWlkLWVkaXRvclxcbWVybWFpZC1lZGl0b3IuY29tcG9uZW50LnNjc3MiLCJwcm9qZWN0cy9ub2RlLXJlZC1wb2Mvc3JjL2FwcC9ncmFwaC9jb250YWluZXJzL21lcm1haWQtZWRpdG9yL21lcm1haWQtZWRpdG9yLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBQTtFQUNBLE9BQUE7QUNDRiIsImZpbGUiOiJwcm9qZWN0cy9ub2RlLXJlZC1wb2Mvc3JjL2FwcC9ncmFwaC9jb250YWluZXJzL21lcm1haWQtZWRpdG9yL21lcm1haWQtZWRpdG9yLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiOmhvc3Qge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleDogMTtcclxufVxyXG4iLCI6aG9zdCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXg6IDE7XG59Il19 */"],
+        data: {
+          animation: [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["trigger"])('openClose', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["transition"])(':enter', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({
             transform: 'translateX(0)'
           }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["animate"])('250ms ease-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({
             transform: 'translateX(-2%)'
@@ -106132,15 +106020,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           })), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["state"])('false', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({
             transform: 'translateX(0%)'
           })), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["transition"])('false <=> true', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["animate"])(250))])]
-        }]
-      }], function () {
-        return [{
-          type: _ngrx_store__WEBPACK_IMPORTED_MODULE_1__["Store"]
-        }, {
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]
-        }];
-      }, null);
-    })();
+        }
+      });
+      return MermaidEditorComponent;
+    }();
     /***/
 
   },
@@ -106276,37 +106159,28 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }]
     }];
 
-    var GraphModule = function GraphModule() {
-      _classCallCheck(this, GraphModule);
-    };
+    var GraphModule = /*@__PURE__*/function () {
+      var GraphModule = function GraphModule() {
+        _classCallCheck(this, GraphModule);
+      };
 
-    GraphModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({
-      type: GraphModule
-    });
-    GraphModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({
-      factory: function GraphModule_Factory(t) {
-        return new (t || GraphModule)();
-      },
-      imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["ReactiveFormsModule"], _material_material_module__WEBPACK_IMPORTED_MODULE_3__["MaterialModule"], _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"].forChild(route), _ngrx_store__WEBPACK_IMPORTED_MODULE_7__["StoreModule"].forFeature('graphProduct', _store_reducers__WEBPACK_IMPORTED_MODULE_9__["reducers"]), _ngrx_effects__WEBPACK_IMPORTED_MODULE_8__["EffectsModule"].forFeature([_store_effects_graph_effects__WEBPACK_IMPORTED_MODULE_10__["GraphEffect"]])]]
-    });
+      GraphModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({
+        type: GraphModule
+      });
+      GraphModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({
+        factory: function GraphModule_Factory(t) {
+          return new (t || GraphModule)();
+        },
+        imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["ReactiveFormsModule"], _material_material_module__WEBPACK_IMPORTED_MODULE_3__["MaterialModule"], _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"].forChild(route), _ngrx_store__WEBPACK_IMPORTED_MODULE_7__["StoreModule"].forFeature('graphProduct', _store_reducers__WEBPACK_IMPORTED_MODULE_9__["reducers"]), _ngrx_effects__WEBPACK_IMPORTED_MODULE_8__["EffectsModule"].forFeature([_store_effects_graph_effects__WEBPACK_IMPORTED_MODULE_10__["GraphEffect"]])]]
+      });
+      return GraphModule;
+    }();
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](GraphModule, {
         declarations: [_containers_mermaid_editor_mermaid_editor_component__WEBPACK_IMPORTED_MODULE_12__["MermaidEditorComponent"], _containers_launch_application_launch_application_component__WEBPACK_IMPORTED_MODULE_11__["LaunchApplicationComponent"], _components_text_box_editor_test_flow_editor_component__WEBPACK_IMPORTED_MODULE_13__["TestFlowEditorComponent"], _components_graph_error_graph_error_component__WEBPACK_IMPORTED_MODULE_14__["GraphErrorComponent"], _components_svg_panel_svg_panel_component__WEBPACK_IMPORTED_MODULE_15__["SvgPanelComponent"], _components_form_action_form_action_component__WEBPACK_IMPORTED_MODULE_16__["FormActionComponent"]],
         imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["ReactiveFormsModule"], _material_material_module__WEBPACK_IMPORTED_MODULE_3__["MaterialModule"], _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"], _ngrx_store__WEBPACK_IMPORTED_MODULE_7__["StoreFeatureModule"], _ngrx_effects__WEBPACK_IMPORTED_MODULE_8__["EffectsFeatureModule"]]
       });
-    })();
-    /*@__PURE__*/
-
-
-    (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](GraphModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
-        args: [{
-          declarations: [].concat(_toConsumableArray(_containers__WEBPACK_IMPORTED_MODULE_4__["CONTAINERS"]), _toConsumableArray(_components__WEBPACK_IMPORTED_MODULE_2__["COMPONENTS"])),
-          imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["ReactiveFormsModule"], _material_material_module__WEBPACK_IMPORTED_MODULE_3__["MaterialModule"], _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"].forChild(route), _ngrx_store__WEBPACK_IMPORTED_MODULE_7__["StoreModule"].forFeature('graphProduct', _store_reducers__WEBPACK_IMPORTED_MODULE_9__["reducers"]), _ngrx_effects__WEBPACK_IMPORTED_MODULE_8__["EffectsModule"].forFeature([_store_effects_graph_effects__WEBPACK_IMPORTED_MODULE_10__["GraphEffect"]])]
-        }]
-      }], null, null);
     })();
     /***/
 
@@ -106372,102 +106246,87 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! @angular/router */
     "../../node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
 
-    var MermaidService = /*#__PURE__*/function () {
-      function MermaidService(store, router, route) {
-        var _this3 = this;
+    var MermaidService = /*@__PURE__*/function () {
+      var MermaidService = /*#__PURE__*/function () {
+        function MermaidService(store, router, route) {
+          var _this3 = this;
 
-        _classCallCheck(this, MermaidService);
+          _classCallCheck(this, MermaidService);
 
-        this.store = store;
-        this.router = router;
-        this.route = route;
-        var config = {
-          startOnLoad: true,
-          flowchart: {
-            useMaxWidth: true,
-            htmlLabels: true,
-            curve: 'cardinal'
-          },
-          securityLevel: 'loose'
-        };
-        mermaid__WEBPACK_IMPORTED_MODULE_1___default.a.mermaidAPI.initialize(config);
-
-        window['callback'] = function (id) {
-          _this3.store.dispatch(Object(_store_actions_graph_actions__WEBPACK_IMPORTED_MODULE_3__["graphNodeClickAction"])({
-            nodeId: id
-          }));
-
-          _this3.router.navigate(['/graph-editor/LaunchApplication']);
-        };
-      }
-
-      _createClass(MermaidService, [{
-        key: "drawGraph",
-        value: function drawGraph(selector, graphDefinition) {
-          this.createNodes(graphDefinition);
-          var subject = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"](null);
-
-          try {
-            var result = mermaid__WEBPACK_IMPORTED_MODULE_1___default.a.parse(graphDefinition);
-            mermaid__WEBPACK_IMPORTED_MODULE_1___default.a.mermaidAPI.render(selector, graphDefinition, function (svgCode, bindFunctions) {
-              subject.next(Object(_store_actions_graph_actions__WEBPACK_IMPORTED_MODULE_3__["updateGraphSvgAction"])({
-                svgCode: svgCode,
-                bindFunctions: bindFunctions,
-                svgError: null
-              }));
-            });
-          } catch (error) {
-            subject.next(Object(_store_actions_graph_actions__WEBPACK_IMPORTED_MODULE_3__["updateGraphSvgAction"])({
-              svgCode: '',
-              bindFunctions: null,
-              svgError: error
-            }));
-          }
-
-          return subject.asObservable();
-        }
-      }, {
-        key: "createNodes",
-        value: function createNodes(graphDefinition) {
-          var NodeTypeRegex = {
-            node: /(\w+)[\[|\(|\>|\{|][\[|\(|\{|\/|\\]*([\w\s])+[\]\)|\}|\/\]|\\\]]+/,
-            link: /d/
+          this.store = store;
+          this.router = router;
+          this.route = route;
+          var config = {
+            startOnLoad: true,
+            flowchart: {
+              useMaxWidth: true,
+              htmlLabels: true,
+              curve: 'cardinal'
+            },
+            securityLevel: 'loose'
           };
-          var definitions = graphDefinition.split('\n');
-          console.log(definitions);
-        }
-      }]);
+          mermaid__WEBPACK_IMPORTED_MODULE_1___default.a.mermaidAPI.initialize(config);
 
+          window['callback'] = function (id) {
+            _this3.store.dispatch(Object(_store_actions_graph_actions__WEBPACK_IMPORTED_MODULE_3__["graphNodeClickAction"])({
+              nodeId: id
+            }));
+
+            _this3.router.navigate(['/graph-editor/LaunchApplication']);
+          };
+        }
+
+        _createClass(MermaidService, [{
+          key: "drawGraph",
+          value: function drawGraph(selector, graphDefinition) {
+            this.createNodes(graphDefinition);
+            var subject = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"](null);
+
+            try {
+              var result = mermaid__WEBPACK_IMPORTED_MODULE_1___default.a.parse(graphDefinition);
+              mermaid__WEBPACK_IMPORTED_MODULE_1___default.a.mermaidAPI.render(selector, graphDefinition, function (svgCode, bindFunctions) {
+                subject.next(Object(_store_actions_graph_actions__WEBPACK_IMPORTED_MODULE_3__["updateGraphSvgAction"])({
+                  svgCode: svgCode,
+                  bindFunctions: bindFunctions,
+                  svgError: null
+                }));
+              });
+            } catch (error) {
+              subject.next(Object(_store_actions_graph_actions__WEBPACK_IMPORTED_MODULE_3__["updateGraphSvgAction"])({
+                svgCode: '',
+                bindFunctions: null,
+                svgError: error
+              }));
+            }
+
+            return subject.asObservable();
+          }
+        }, {
+          key: "createNodes",
+          value: function createNodes(graphDefinition) {
+            var NodeTypeRegex = {
+              node: /(\w+)[\[|\(|\>|\{|][\[|\(|\{|\/|\\]*([\w\s])+[\]\)|\}|\/\]|\\\]]+/,
+              link: /d/
+            };
+            var definitions = graphDefinition.split('\n');
+            console.log(definitions);
+          }
+        }]);
+
+        return MermaidService;
+      }();
+
+      MermaidService.ɵfac = function MermaidService_Factory(t) {
+        return new (t || MermaidService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_ngrx_store__WEBPACK_IMPORTED_MODULE_4__["Store"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_5__["ActivatedRoute"]));
+      };
+
+      MermaidService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+        token: MermaidService,
+        factory: MermaidService.ɵfac,
+        providedIn: 'root'
+      });
       return MermaidService;
     }();
-
-    MermaidService.ɵfac = function MermaidService_Factory(t) {
-      return new (t || MermaidService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_ngrx_store__WEBPACK_IMPORTED_MODULE_4__["Store"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_5__["ActivatedRoute"]));
-    };
-
-    MermaidService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
-      token: MermaidService,
-      factory: MermaidService.ɵfac,
-      providedIn: 'root'
-    });
-    /*@__PURE__*/
-
-    (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](MermaidService, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
-        args: [{
-          providedIn: 'root'
-        }]
-      }], function () {
-        return [{
-          type: _ngrx_store__WEBPACK_IMPORTED_MODULE_4__["Store"]
-        }, {
-          type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]
-        }, {
-          type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["ActivatedRoute"]
-        }];
-      }, null);
-    })();
     /***/
 
   },
@@ -106678,45 +106537,33 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! @angular/router */
     "../../node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
 
-    var GraphEffect = function GraphEffect(actions$, mermaidService, router) {
-      var _this4 = this;
+    var GraphEffect = /*@__PURE__*/function () {
+      var GraphEffect = function GraphEffect(actions$, mermaidService, router) {
+        var _this4 = this;
 
-      _classCallCheck(this, GraphEffect);
+        _classCallCheck(this, GraphEffect);
 
-      this.actions$ = actions$;
-      this.mermaidService = mermaidService;
-      this.router = router;
-      this.updateGraphDefinitionEffect$ = Object(_ngrx_effects__WEBPACK_IMPORTED_MODULE_1__["createEffect"])(function () {
-        return Object(_graph_definition_handleGraphDefinitionUpdateEffect__WEBPACK_IMPORTED_MODULE_2__["handleGraphDefinitionUpdateEffect"])(_this4.actions$, _this4.mermaidService);
+        this.actions$ = actions$;
+        this.mermaidService = mermaidService;
+        this.router = router;
+        this.updateGraphDefinitionEffect$ = Object(_ngrx_effects__WEBPACK_IMPORTED_MODULE_1__["createEffect"])(function () {
+          return Object(_graph_definition_handleGraphDefinitionUpdateEffect__WEBPACK_IMPORTED_MODULE_2__["handleGraphDefinitionUpdateEffect"])(_this4.actions$, _this4.mermaidService);
+        });
+        this.graphNodeSaveEffect$ = Object(_ngrx_effects__WEBPACK_IMPORTED_MODULE_1__["createEffect"])(function () {
+          return Object(_graph_node_save_graphNodeSaveFormEffect__WEBPACK_IMPORTED_MODULE_3__["handleGraphNodeFormSaveEffect"])(_this4.actions$, _this4.router);
+        });
+      };
+
+      GraphEffect.ɵfac = function GraphEffect_Factory(t) {
+        return new (t || GraphEffect)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_ngrx_effects__WEBPACK_IMPORTED_MODULE_1__["Actions"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_services_mermaid_mermaid_service__WEBPACK_IMPORTED_MODULE_4__["MermaidService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]));
+      };
+
+      GraphEffect.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+        token: GraphEffect,
+        factory: GraphEffect.ɵfac
       });
-      this.graphNodeSaveEffect$ = Object(_ngrx_effects__WEBPACK_IMPORTED_MODULE_1__["createEffect"])(function () {
-        return Object(_graph_node_save_graphNodeSaveFormEffect__WEBPACK_IMPORTED_MODULE_3__["handleGraphNodeFormSaveEffect"])(_this4.actions$, _this4.router);
-      });
-    };
-
-    GraphEffect.ɵfac = function GraphEffect_Factory(t) {
-      return new (t || GraphEffect)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_ngrx_effects__WEBPACK_IMPORTED_MODULE_1__["Actions"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_services_mermaid_mermaid_service__WEBPACK_IMPORTED_MODULE_4__["MermaidService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]));
-    };
-
-    GraphEffect.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
-      token: GraphEffect,
-      factory: GraphEffect.ɵfac
-    });
-    /*@__PURE__*/
-
-    (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](GraphEffect, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"]
-      }], function () {
-        return [{
-          type: _ngrx_effects__WEBPACK_IMPORTED_MODULE_1__["Actions"]
-        }, {
-          type: _services_mermaid_mermaid_service__WEBPACK_IMPORTED_MODULE_4__["MermaidService"]
-        }, {
-          type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]
-        }];
-      }, null);
-    })();
+      return GraphEffect;
+    }();
     /***/
 
   },

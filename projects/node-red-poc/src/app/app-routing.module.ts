@@ -24,8 +24,15 @@ export const routes: any = Object.freeze([
     iconConfig: { icon: 'dashboard', type: 'icon' },
   },
   {
+    path: 'grid-demo',
+    loadChildren: () =>
+      import('./ag-grid/ag-grid.module').then((m) => m.AgGridDemoModule),
+    title: 'Ag Grid Demo',
+    iconConfig: { icon: 'dashboard', type: 'icon' },
+  },
+  {
     path: '',
-    redirectTo: '/graph-editor',
+    redirectTo: '/grid-demo',
     pathMatch: 'full',
   },
 ]);

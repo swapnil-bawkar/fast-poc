@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href=/mermaid-poc/docs/ --aot --buildOptimizer --outputPath=docs",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -27,6 +27,8 @@
     "@ngrx/store-devtools": "^9.1.0",
     "@swimlane/ngx-graph": "^7.0.1",
     "@types/mermaid": "^8.2.1",
+    "ag-grid-angular": "^23.1.0",
+    "ag-grid-community": "^23.1.0",
     "mermaid": "^8.5.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
