@@ -29,7 +29,7 @@
     "@types/mermaid": "^8.2.1",
     "ag-grid-angular": "^23.1.0",
     "ag-grid-community": "^23.1.0",
-    "mermaid": "^8.5.0",
+    "mermaid": "^9.1.2",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
